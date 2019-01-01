@@ -57,7 +57,7 @@ int parse_exec(char* buff){
       Keyboard.println(para);
     }
     else{
-      Serial_OUT.print(F(" not support this action"));
+      Serial_OUT.print(F("               :Invalid Operation"));
     }
   }
   else if(buff[0] == 'm'){
@@ -125,7 +125,7 @@ int parse_exec(char* buff){
       Mouse.move(mx, my, mw);
     }
     else{
-      Serial_OUT.print(F(" not support this action"));
+      Serial_OUT.print(F("               :Invalid Operation"));
     }
   }
   else{
